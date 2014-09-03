@@ -1,0 +1,93 @@
+// Created by Crowbar 0.19.0.0
+version 1
+nodes
+  0 "bip_pelvis" -1
+  1 "bip_spine_0" 0
+  2 "bip_spine_1" 1
+  3 "bip_spine_2" 2
+  4 "bip_spine_3" 3
+  5 "bip_neck" 4
+  6 "bip_head" 5
+  7 "bip_collar_L" 4
+  8 "bip_collar_R" 4
+  9 "bip_upperArm_L" 7
+  10 "bip_upperArm_R" 8
+  11 "bip_lowerArm_L" 9
+  12 "bip_lowerArm_R" 10
+  13 "bip_hip_L" 0
+  14 "bip_hip_R" 0
+  15 "bip_knee_L" 13
+  16 "bip_knee_R" 14
+  17 "bip_hand_L" 11
+  18 "bip_hand_R" 12
+  19 "weapon_bone" 18
+  20 "weapon_bone_L" 17
+  21 "weapon_bone_1" 18
+  22 "weapon_bone_2" 18
+  23 "weapon_bone_3" 17
+  24 "weapon_bone_4" 17
+  25 "medal_bone" 3
+  26 "mvm" 0
+  27 "effect_hand_L" 17
+  28 "effect_hand_R" 18
+  29 "bip_foot_L" 15
+  30 "bip_foot_R" 16
+  31 "bip_toe_L" 29
+  32 "bip_toe_R" 30
+  33 "prp_bullet_shoulder" 8
+  34 "prp_bullet_backUpper" 3
+  35 "prp_bullet_backLower" 2
+  36 "prp_bullet_chestUpper" 2
+  37 "prp_bullet_side" 1
+  38 "prp_bullet_chestLower" 1
+  39 "bip_thumb_0_L" 17
+  40 "bip_thumb_0_R" 18
+  41 "bip_index_0_L" 17
+  42 "bip_index_0_R" 18
+  43 "bip_middle_0_L" 17
+  44 "bip_middle_0_R" 18
+  45 "bip_ring_0_L" 17
+  46 "bip_ring_0_R" 18
+  47 "bip_pinky_0_L" 17
+  48 "bip_pinky_0_R" 18
+  49 "bip_thumb_1_L" 39
+  50 "bip_thumb_1_R" 40
+  51 "bip_index_1_L" 41
+  52 "bip_index_1_R" 42
+  53 "bip_middle_1_L" 43
+  54 "bip_middle_1_R" 44
+  55 "bip_ring_1_L" 45
+  56 "bip_ring_1_R" 46
+  57 "bip_pinky_1_L" 47
+  58 "bip_pinky_1_R" 48
+  59 "bip_thumb_2_L" 49
+  60 "bip_thumb_2_R" 50
+  61 "bip_index_2_L" 51
+  62 "bip_index_2_R" 52
+  63 "bip_middle_2_L" 53
+  64 "bip_middle_2_R" 54
+  65 "bip_ring_2_L" 55
+  66 "bip_ring_2_R" 56
+  67 "bip_pinky_2_L" 57
+  68 "bip_pinky_2_R" 58
+  69 "prp_pack" 0
+end
+skeleton
+  time 0
+    19 6.472656 7.554688 -4.113281 -0.890019 0.192403 0.253104
+    40 2.440128 1.974079 -3.836582 -1.079059 -0.377351 -0.444902
+    42 0.751560 6.859690 -4.600633 2.659351 1.230114 2.572448
+    44 0.713032 6.783422 -1.947194 2.794743 1.177474 2.493110
+    46 1.681057 6.576614 0.639791 3.124217 1.142947 2.694016
+    48 2.639759 6.552795 2.641643 2.918621 1.005058 2.378065
+    50 -0.000066 4.365019 0.000000 0.483676 0.000000 0.000000
+    52 -0.000002 3.600716 0.000004 0.188693 0.000000 0.000000
+    54 -0.000006 4.729763 0.000074 0.737115 0.000000 0.000000
+    56 0.000004 3.781143 -0.000002 0.776972 0.075280 0.238648
+    58 0.000009 3.015038 -0.000043 0.740131 0.052515 -0.058198
+    60 -0.000005 1.793259 0.000013 -0.307828 0.000000 0.000000
+    62 0.000002 2.262791 0.000073 0.547328 0.069200 0.086702
+    64 0.000015 2.758465 -0.000071 0.556752 0.047263 0.091160
+    66 -0.000010 2.398338 0.000060 0.536616 0.000000 0.000000
+    68 -0.000018 1.878212 0.000047 0.634859 0.063577 -0.020552
+end

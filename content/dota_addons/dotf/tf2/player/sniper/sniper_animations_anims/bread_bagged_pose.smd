@@ -1,0 +1,90 @@
+// Created by Crowbar 0.19.0.0
+version 1
+nodes
+  0 "bip_pelvis" -1
+  1 "bip_spine_0" 0
+  2 "bip_spine_1" 1
+  3 "bip_spine_2" 2
+  4 "bip_spine_3" 3
+  5 "bip_neck" 4
+  6 "bip_head" 5
+  7 "bip_collar_L" 4
+  8 "bip_collar_R" 4
+  9 "bip_upperArm_L" 7
+  10 "bip_upperArm_R" 8
+  11 "bip_lowerArm_L" 9
+  12 "bip_lowerArm_R" 10
+  13 "bip_hip_L" 0
+  14 "bip_hip_R" 0
+  15 "bip_knee_L" 13
+  16 "bip_knee_R" 14
+  17 "bip_foot_L" 15
+  18 "bip_foot_R" 16
+  19 "bip_hand_L" 11
+  20 "bip_hand_R" 12
+  21 "bip_toe_L" 17
+  22 "bip_toe_R" 18
+  23 "prp_hat" 6
+  24 "weapon_bone" 20
+  25 "weapon_bone_1" 20
+  26 "weapon_bone_2" 20
+  27 "weapon_bone_3" 20
+  28 "weapon_bone_4" 20
+  29 "weapon_bone_L" 19
+  30 "medal_bone" 3
+  31 "mvm" 0
+  32 "effect_hand_L" 19
+  33 "effect_hand_R" 20
+  34 "prp_bullets" 3
+  35 "prp_gunPack" 3
+  36 "prp_pouch" 0
+  37 "bip_index_0_L" 19
+  38 "bip_middle_0_L" 19
+  39 "bip_pinky_0_L" 19
+  40 "bip_thumb_0_L" 19
+  41 "bip_thumb_0_R" 20
+  42 "bip_ring_0_L" 19
+  43 "bip_index_0_R" 20
+  44 "bip_pinky_0_R" 20
+  45 "bip_ring_0_R" 20
+  46 "bip_middle_0_R" 20
+  47 "bip_thumb_1_L" 40
+  48 "bip_thumb_1_R" 41
+  49 "bip_index_1_L" 37
+  50 "bip_index_1_R" 43
+  51 "bip_middle_1_L" 38
+  52 "bip_middle_1_R" 46
+  53 "bip_ring_1_L" 42
+  54 "bip_ring_1_R" 45
+  55 "bip_pinky_1_L" 39
+  56 "bip_pinky_1_R" 44
+  57 "bip_thumb_2_L" 47
+  58 "bip_thumb_2_R" 48
+  59 "bip_index_2_L" 49
+  60 "bip_index_2_R" 50
+  61 "bip_middle_2_L" 51
+  62 "bip_middle_2_R" 52
+  63 "bip_ring_2_L" 53
+  64 "bip_ring_2_R" 54
+  65 "bip_pinky_2_L" 55
+  66 "bip_pinky_2_R" 56
+end
+skeleton
+  time 0
+    24 5.136719 7.929688 -3.857422 -2.917247 -0.444973 1.282536
+    41 1.859810 2.648314 -2.207271 -0.792061 -0.820006 -0.815605
+    43 -0.237633 5.361609 -1.505614 1.175748 1.495122 0.825045
+    44 0.228004 4.503653 3.220767 2.803230 0.955402 2.377745
+    45 0.394375 5.352367 1.896399 2.848682 1.284855 2.542456
+    46 -0.179268 5.739395 0.211205 1.876980 1.387761 1.440372
+    48 -0.000019 2.049988 0.000000 0.354507 0.057659 0.079272
+    50 0.000007 2.789333 0.000017 0.064896 0.000000 0.000000
+    52 -0.000005 2.810352 -0.000023 0.110736 -0.018679 -0.060026
+    54 -0.000004 2.377281 0.000021 0.383883 0.014032 0.041527
+    56 -0.000004 2.339714 0.000072 0.182830 0.000000 0.000000
+    58 0.000027 1.291435 0.000019 -0.033934 -0.087340 0.145091
+    60 0.000000 1.804710 0.000016 0.302354 0.109667 0.010387
+    62 -0.000003 2.500298 0.000022 0.830101 0.250623 0.177546
+    64 0.000003 2.165981 0.000019 0.800104 0.004151 0.056172
+    66 0.000009 1.654011 -0.000056 0.261366 -0.079871 0.160468
+end

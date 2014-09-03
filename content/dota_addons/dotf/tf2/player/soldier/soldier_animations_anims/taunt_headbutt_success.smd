@@ -1,0 +1,221 @@
+// Created by Crowbar 0.19.0.0
+version 1
+nodes
+  0 "bip_pelvis" -1
+  1 "bip_spine_0" 0
+  2 "bip_spine_1" 1
+  3 "bip_spine_2" 2
+  4 "bip_spine_3" 3
+  5 "bip_neck" 4
+  6 "bip_head" 5
+  7 "bip_collar_L" 4
+  8 "bip_collar_R" 4
+  9 "bip_upperArm_L" 7
+  10 "bip_upperArm_R" 8
+  11 "bip_lowerArm_L" 9
+  12 "bip_lowerArm_R" 10
+  13 "bip_hip_L" 0
+  14 "bip_hip_R" 0
+  15 "bip_knee_L" 13
+  16 "bip_knee_R" 14
+  17 "bip_foot_L" 15
+  18 "bip_foot_R" 16
+  19 "bip_hand_L" 11
+  20 "bip_hand_R" 12
+  21 "effect_hand_L" 19
+  22 "effect_hand_R" 20
+  23 "medal_bone" 3
+  24 "weapon_bone" 20
+  25 "weapon_bone_L" 19
+  26 "weapon_bone_1" 20
+  27 "handle_bone" 24
+  28 "mvm" 0
+  29 "rocket_joint" 19
+  30 "bip_toe_L" 17
+  31 "bip_toe_R" 18
+  32 "prp_helmet" 6
+  33 "prp_grenade_bottom" 2
+  34 "prp_grenade_top" 3
+  35 "prp_coatCollar_L" 4
+  36 "prp_coatCollar_R" 4
+  37 "prp_coatCollar_back" 4
+  38 "prp_coat_front_L" 0
+  39 "prp_coat_front_R" 0
+  40 "prp_coat_back_L" 0
+  41 "prp_coat_back_R" 0
+  42 "prp_coat_front_1_L" 38
+  43 "prp_coat_front_1_R" 39
+  44 "prp_coat_back_1_L" 40
+  45 "prp_coat_back_1_R" 41
+  46 "prp_pack_L" 0
+  47 "prp_pack_R" 0
+  48 "prp_pack_back" 0
+  49 "bip_thumb_0_L" 19
+  50 "bip_thumb_0_R" 20
+  51 "bip_index_0_L" 19
+  52 "bip_index_0_R" 20
+  53 "bip_middle_0_L" 19
+  54 "bip_middle_0_R" 20
+  55 "bip_ring_0_L" 19
+  56 "bip_ring_0_R" 20
+  57 "bip_pinky_0_L" 19
+  58 "bip_pinky_0_R" 20
+  59 "bip_thumb_1_L" 49
+  60 "bip_thumb_1_R" 50
+  61 "bip_index_1_L" 51
+  62 "bip_index_1_R" 52
+  63 "bip_middle_1_R" 54
+  64 "bip_middle_1_L" 53
+  65 "bip_ring_1_R" 56
+  66 "bip_ring_1_L" 55
+  67 "bip_pinky_1_L" 57
+  68 "bip_pinky_1_R" 58
+  69 "bip_thumb_2_R" 60
+  70 "bip_thumb_2_L" 59
+  71 "bip_index_2_L" 61
+  72 "bip_index_2_R" 62
+  73 "bip_middle_2_L" 64
+  74 "bip_middle_2_R" 63
+  75 "bip_ring_2_L" 66
+  76 "bip_ring_2_R" 65
+  77 "bip_pinky_2_L" 67
+  78 "bip_pinky_2_R" 68
+end
+skeleton
+  time 0
+  time 1
+  time 2
+  time 3
+  time 4
+  time 5
+  time 6
+  time 7
+  time 8
+  time 9
+  time 10
+  time 11
+  time 12
+  time 13
+  time 14
+  time 15
+  time 16
+  time 17
+  time 18
+  time 19
+  time 20
+  time 21
+  time 22
+  time 23
+  time 24
+  time 25
+  time 26
+  time 27
+  time 28
+  time 29
+  time 30
+  time 31
+  time 32
+  time 33
+  time 34
+  time 35
+  time 36
+  time 37
+  time 38
+  time 39
+  time 40
+  time 41
+  time 42
+  time 43
+  time 44
+  time 45
+  time 46
+  time 47
+  time 48
+  time 49
+  time 50
+  time 51
+  time 52
+  time 53
+  time 54
+  time 55
+  time 56
+  time 57
+  time 58
+  time 59
+  time 60
+  time 61
+  time 62
+  time 63
+  time 64
+  time 65
+  time 66
+  time 67
+  time 68
+  time 69
+  time 70
+  time 71
+  time 72
+  time 73
+  time 74
+  time 75
+  time 76
+  time 77
+  time 78
+  time 79
+  time 80
+  time 81
+  time 82
+  time 83
+  time 84
+  time 85
+  time 86
+  time 87
+  time 88
+  time 89
+  time 90
+  time 91
+  time 92
+  time 93
+  time 94
+  time 95
+  time 96
+  time 97
+  time 98
+  time 99
+  time 100
+  time 101
+  time 102
+  time 103
+  time 104
+  time 105
+  time 106
+  time 107
+  time 108
+  time 109
+  time 110
+  time 111
+  time 112
+  time 113
+  time 114
+  time 115
+  time 116
+  time 117
+  time 118
+  time 119
+  time 120
+  time 121
+  time 122
+  time 123
+  time 124
+  time 125
+  time 126
+  time 127
+  time 128
+  time 129
+  time 130
+  time 131
+  time 132
+  time 133
+  time 134
+  time 135
+end
