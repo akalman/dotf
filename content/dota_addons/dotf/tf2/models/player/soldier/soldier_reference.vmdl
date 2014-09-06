@@ -89,6 +89,16 @@ CVMaterialRemapList CVMaterialRemapList_0
 		{
 			string m_sSearchMaterial = "soldier_head_red.vmat"
 			string m_sReplaceMaterial = "tf2/textures/player/soldier/soldier_head.vmat"
+		},
+		CVMaterialRemap
+		{
+			string m_sSearchMaterial = "eyeball_l.vmat"
+			string m_sReplaceMaterial = "tf2/textures/player/soldier/eye_iris_blue.vmat"
+		},
+		CVMaterialRemap
+		{
+			string m_sSearchMaterial = "eyeball_r.vmat"
+			string m_sReplaceMaterial = "tf2/textures/player/soldier/eye_iris_blue.vmat"
 		}
 	]
 }
