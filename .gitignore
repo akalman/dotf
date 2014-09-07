@@ -9,3 +9,5 @@ game/*
 !game/dota_addons
 game/dota_addons/*
 !game/dota_addons/dotf
+
+**/*.bin
