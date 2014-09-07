@@ -1,0 +1,6 @@
+<%= config.title %>
+
+<%= config.description %>
+<% if (config.reviewers && config.reviewers.length > 0) { %>===CODE REVIEW===<% } %>
+<% _.forEach(config.reviewers, function(reviewer) { %> - [ ] <%- reviewer %>
+<% }); %>
