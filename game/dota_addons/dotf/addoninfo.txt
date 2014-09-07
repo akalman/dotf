@@ -1,3 +1,15 @@
 "AddonInfo"
 {
+	"maps" "dota_pvp"
+	"IsPlayable" "1"
+	"addonSteamAppID" ""
+	"addontitle" "Defense of the Fortress"
+	"addonversion" "0.1"
+	"addontagline" "dotf"
+	"addonauthor" "dkeka"
+	"addonSteamGroupName" ""
+	"addonauthorSteamID" ""
+	"addonContent_Campaign" "0"
+	"addonURL0" "https://github.com/akalman/dotf/"
+	"addonDescription" ""
 }
