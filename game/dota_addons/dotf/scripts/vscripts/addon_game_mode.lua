@@ -1,3 +1,5 @@
+include('dotf')
+
 -- Generated from template
 
 if CAddonTemplateGameMode == nil then
