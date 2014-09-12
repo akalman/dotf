@@ -1,9 +1,21 @@
-print ('[DOTF] dotf.lua')
+local inspect = require('inspect')
 
-local dotf = class({})
-
-function dotf:InitGameMode()
-	print('[DOTF] game mode started')
+return function()
+	local dotf = {}
+	
+	local function callback(eventinfo)
+		print('[dotf] callback')
+		
+		for _,hero in pairs(Entities:FindAllByClassname( "npc_dota_hero_antimage")) do
+			print(inspect(hero))
+		end
+	end
+	
+	function dotf.InitGameMode()
+		print('[dotf] game mode started')
+		
+		ListenToGameEvent('dota_item_purchased', callback, self)
+	end
+	
+	return dotf
 end
-
-return dotf
