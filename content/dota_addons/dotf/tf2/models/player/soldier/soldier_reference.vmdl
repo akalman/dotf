@@ -14,6 +14,16 @@ CVModel CVModel_0
 				bool m_bExpensiveTangents = false
 				bool m_bExpensiveVertices = false
 				CVmorphInfo* m_pMorphInfo = NULL
+			},
+			CVmesh
+			{
+				string m_meshName = "soldier_hat_bodygroup"
+				string m_meshFile = "tf2/models/player/soldier/soldier_hat_bodygroup.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
 			}
 		]
 	}
@@ -898,10 +908,61 @@ CVanimGroup CVanimGroup_0
 		},
 		CVanim
 		{
-			string m_Animationname = "ref"
-			string m_Filepath = "tf2/models/player/soldier/soldier_anims/ref.smd"
+			string m_Animationname = "selectionMenu_Idle"
+			string m_Filepath = "tf2/models/player/soldier/soldier_animations_anims/selectionMenu_Idle.smd"
 			int m_nStartframe = 0
-			int m_nEndframe = 0
+			int m_nEndframe = 92
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = true
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "selectionMenu_Anim0l"
+			string m_Filepath = "tf2/models/player/soldier/soldier_animations_anims/selectionMenu_Anim0l.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 128
 			float m_flFps = 30.000000
 			CAnimationLoop m_Loop = CAnimationLoop
 			{
@@ -919,6 +980,61 @@ CVanimGroup CVanimGroup_0
 			CActivity[] m_Activities = 
 			[
 				
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "stand_MELEE"
+			string m_Filepath = "tf2/models/player/soldier/soldier_animations_anims/stand_MELEE.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 50
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = true
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_IDLE"
+					int m_nWeight = 1
+				}
 			]
 			CAnimationEvent[] m_AnimationEvents = 
 			[
@@ -3232,7 +3348,11 @@ CVanimGroup CVanimGroup_7
 			bool m_bHidden = false
 			CActivity[] m_Activities = 
 			[
-				
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK"
+					int m_nWeight = 1
+				}
 			]
 			CAnimationEvent[] m_AnimationEvents = 
 			[
@@ -4253,7 +4373,11 @@ CVanimGroup CVanimGroup_8
 			bool m_bHidden = false
 			CActivity[] m_Activities = 
 			[
-				
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_RUN"
+					int m_nWeight = 1
+				}
 			]
 			CAnimationEvent[] m_AnimationEvents = 
 			[
