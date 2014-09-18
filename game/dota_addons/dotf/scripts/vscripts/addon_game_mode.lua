@@ -10,15 +10,11 @@ function Precache( context )
 			PrecacheResource( "particle_folder", "particles/folder", context )
 	]]
 	print("[dotf] Performing pre-load precache")
-	
-	PrecacheModel("tf2/models/player/soldier/soldier_reference.vmdl", context)
 end
 
 -- Create the game mode when we activate
 function Activate()
 	print("[dotf] activating game mode")
-	
-	print(inspect(GameRules))
 	
 	local gameMode = dotf()
 	
