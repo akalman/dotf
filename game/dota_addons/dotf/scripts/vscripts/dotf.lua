@@ -1,9 +1,11 @@
-print ('[DOTF] dotf.lua')
+local inspect = require('inspect')
 
-local dotf = class({})
-
-function dotf:InitGameMode()
-	print('[DOTF] game mode started')
+return function()
+	local dotf = {}
+	
+	function dotf.InitGameMode()
+		print('[dotf] game mode started')
+	end
+	
+	return dotf
 end
-
-return dotf
