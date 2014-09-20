@@ -14,5 +14,6 @@
 			"IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/a_runN_LOSER.smd"
 			"ParticleFile" "particles/basic_ambient.vcpf"
 			"ModelScale" 				"2.7"
+			"Ability1"	"soldier_rocket"
 	}
 }

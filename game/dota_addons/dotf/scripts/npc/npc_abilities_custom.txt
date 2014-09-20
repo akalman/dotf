@@ -46,4 +46,150 @@
 			}
 		}
 	}
+	"soldier_rocket"
+	{
+		"precache"
+		{
+		    "particle_folder"			"particles/units/heroes/hero_batrider"
+			"soundfile"                 "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+		}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityTextureName"			"gyrocopter_homing_missile"
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1500"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2.0 1.0 1.0 1.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"OnSpellStart"
+		{
+			"LinearProjectile"
+			{
+				"Target"				"POINT"
+				"EffectName"			"particles/units/heroes/hero_batrider/batrider_flamebreak.vpcf"
+				"MoveSpeed"				"%speed"	
+				"StartRadius"			"%radius"
+				"EndRadius"				"%radius"
+				"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
+				"HasFrontalCone"		"0"
+				"ProvidesVision"		"1"
+				"VisionRadius"			"400"
+			}
+			"FireSound"
+			{
+				"EffectName"			"Hero_Venomancer.VenomousGale"
+			}
+		}
+		
+		OnProjectileHitUnit
+		{
+			"Damage"
+			{	
+				"Target"
+				{
+					"Center"		"TARGET"
+					"Radius"		"2000"
+					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Type"			"DOTA_UNIT_TARGET_ALL"
+				}
+				"Damage"				"%damage"
+				"Type" 	         		"DAMAGE_TYPE_PURE"
+			}
+			"Knockback"
+			{
+				"Target"
+				{
+					"Center"		"TARGET"
+					"Radius"		"2000"
+					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Type"			"DOTA_UNIT_TARGET_ALL"
+				}
+				"Center"	"TARGET"
+				"Duration"	"1"
+				"Distance"	"20"
+			}
+
+			"FireSound"
+			{
+				"EffectName"			"Hero_Venomancer.VenomousGaleImpact"
+			}
+		}
+		
+		OnProjectileFinish
+		{
+			"Damage"
+			{	
+				"Target"
+				{
+					"Center"		"POINT"
+					"Radius"		"2000"
+					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Type"			"DOTA_UNIT_TARGET_ALL"
+				}
+				"Damage"				"%damage"
+				"Type" 	         		"DAMAGE_TYPE_PURE"
+			}
+			"Knockback"
+			{
+				"Target"
+				{
+					"Center"		"POINT"
+					"Radius"		"2000"
+					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Type"			"DOTA_UNIT_TARGET_ALL"
+				}
+				"Center"	"POINT"
+				"Duration"	"1"
+				"Distance"	"20"
+			}
+
+			"FireSound"
+			{
+				"EffectName"			"Hero_Venomancer.VenomousGaleImpact"
+			}
+		}
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_bonus"			"900"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"125 125 125 125"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1200 1200 1200 1200"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"200 200 200 200"
+			}
+		}	
+	}
 }
