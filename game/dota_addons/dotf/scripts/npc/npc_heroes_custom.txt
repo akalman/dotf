@@ -11,7 +11,7 @@
 			//-------------------------------------------------------------------------------------------------------------
 			"override_hero" "npc_dota_hero_antimage"
 			"Model" "tf2/models/player/soldier/soldier_reference.vmdl"
-			"IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/a_runN_LOSER.smd"
+			"IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/stand_MELEE.smd"
 			"ParticleFile" "particles/basic_ambient.vcpf"
 			"ModelScale" 				"2.7"
 			"Ability1"	"soldier_rocket"
