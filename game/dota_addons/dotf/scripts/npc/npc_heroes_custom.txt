@@ -13,7 +13,7 @@
 			"Model" "tf2/models/player/soldier/soldier_reference.vmdl"
 			"IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/stand_MELEE.smd"
 			"ParticleFile" "particles/basic_ambient.vcpf"
-			"ModelScale" 				"2.7"
+			"ModelScale" "2.0"
 			"Ability1"	"soldier_rocket"
 	}
 }

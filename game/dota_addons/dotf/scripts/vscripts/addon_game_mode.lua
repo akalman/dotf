@@ -1,4 +1,4 @@
-local dotf = require('dotf')
+local Dotf = require('dotf')
 local inspect = require('inspect')
 
 function Precache( context )
@@ -15,8 +15,8 @@ end
 -- Create the game mode when we activate
 function Activate()
 	print("[dotf] activating game mode")
-	
-	local gameMode = dotf()
-	
+
+	local gameMode = Dotf()
+
 	gameMode.InitGameMode()
 end

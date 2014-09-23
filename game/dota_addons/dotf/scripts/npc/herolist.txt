@@ -2,7 +2,5 @@
  
 "CustomHeroList"
 {
-		"npc_dota_hero_templar_assassin" "-1"
-		"npc_dota_hero_lina" "-1"
 		"npc_dota_hero_antimage" "-1"
 }
