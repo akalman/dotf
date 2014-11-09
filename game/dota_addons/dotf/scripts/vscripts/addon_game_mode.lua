@@ -10,6 +10,8 @@ function Precache( context )
 			PrecacheResource( "particle_folder", "particles/folder", context )
 	]]
 	print("[dotf] Performing pre-load precache")
+	
+	PrecacheResource( "soldier_models", "tf2/model/player/soldier", context )
 end
 
 -- Create the game mode when we activate

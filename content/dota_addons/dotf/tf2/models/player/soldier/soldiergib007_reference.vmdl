@@ -7,8 +7,8 @@ CVModel CVModel_0
 		[
 			CVmesh
 			{
-				string m_meshName = "soldiergib001_reference"
-				string m_meshFile = "tf2/models/player/soldier/soldiergib001_reference.smd"
+				string m_meshName = "soldiergib007_reference"
+				string m_meshFile = "tf2/models/player/soldier/soldiergib007_reference.smd"
 				string m_materialSearchPath = ""
 				bool m_bSkinParentedObjects = true
 				bool m_bExpensiveTangents = false
@@ -23,8 +23,11 @@ CVModel CVModel_0
 		[
 			CVphysicsMesh
 			{
-				string m_meshName = "soldiergib001_physics"
-				string m_meshFile = "tf2/models/player/soldier/soldiergib001_physics.smd"
+				string m_meshName = "soldiergib007_physics"
+				string m_meshFile = "tf2/models/player/soldier/soldiergib007_physics.smd"
+				bool m_bConvexify = true
+				bool m_bMultiplePieces = false
+				symbol m_collisionType = STATIC
 				bool m_bUseExactGeometry = false
 				bool m_bAutoMass = true
 				float m_flMassOverride = 100.000000
@@ -108,8 +111,8 @@ CVhitBoxSetList CVhitBoxSetList_0
 					string m_sSurfaceProperty = ""
 					int m_nGroupId = 0
 					string m_sBoneName = "polymsh"
-					float(3) m_vMinBounds = ( -7.344724, -0.162941, -7.194525 )
-					float(3) m_vMaxBounds = ( -1.664476, 6.423825, 6.142250 )
+					float(3) m_vMinBounds = ( -3.922720, 62.970284, -2.724292 )
+					float(3) m_vMaxBounds = ( 6.234558, 74.553734, 7.927005 )
 					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
 				}
 			]
