@@ -14,6 +14,8 @@ local function Dotf()
 	end
 
 	function instance.InitGameMode()
+		GameRules:SetSameHeroSelectionEnabled(true)
+	
 		print('[dotf] game mode started')
 
 		ListenToGameEvent('dota_player_pick_hero', onPlayerSpawn, self)
