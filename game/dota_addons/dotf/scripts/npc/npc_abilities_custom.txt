@@ -2,50 +2,43 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
-
-	//=================================================================================================================
-	// Templar Assassin: Refraction Holdout
-	//=================================================================================================================
-	"templar_assassin_refraction_holdout"
+	
+	"soldier_rocket_jump"
 	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"17.0 17.0 17.0 17.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100"
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		
+		"AbilityCooldown" "0.0"
+		"AbilityManaCost" "0"
+		
+		"OnSpellStart"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_absorb"				"200 300 400 500"
+			"Damage"
+			{	
+				"Target" "CASTER"
+				"Damage" "200"
+				"Type" "DAMAGE_TYPE_PURE"
 			}
-			"02"
+			"Knockback"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_damage"				"20 40 60 80"
+				"Target" "CASTER"
+				"Center" "POINT"
+				"Duration"	"1"
+				"Distance"	"800"
+				"Height" "200"
+				"IsFixedDistance" "0"
+				"ShouldStun" "0"
 			}
-			"04"
+			"FireSound"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"17.0 17.0 17.0 17.0"
+				"EffectName"			"Hero_Venomancer.VenomousGaleImpact"
 			}
 		}
 	}
+	
 	"soldier_rocket"
 	{
 		"precache"
