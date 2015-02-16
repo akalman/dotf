@@ -1,6 +1,6 @@
 local inspect = require('inspect')
 local GibController = require('gib_controller')
-local cosmetic_manager = require('cosmetic_manager')
+local CosmeticManager = require('cosmetic_manager')
 
 local soldierGibUnits = {
 	'npc_dota_dotf_soldier_gib_1',
@@ -17,7 +17,7 @@ local function Soldier(hero)
 	local instance = {}
 	
 	instance.gibController = GibController(hero, 'dota_player_killed', soldierGibUnits)
-	cosmetic_manager.register(hero)
+	instance.cosmeticManager = CosmeticManager(hero, {})
 	
 	return instance
 end
