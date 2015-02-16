@@ -3,6 +3,29 @@
 {
 	"Version"		"1"
 	
+	"replace_cosmetics"
+	{
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"Modifiers"
+		{
+			"test"
+			{
+				"Passive" "1"
+				"OnRespawn"
+				{
+					"RunScript"
+					{
+						"Target" "CASTER"
+						"ScriptFile" "cosmetic_manager.lua"
+						"Function" "on_respawn_callback"
+					}
+				}
+			}
+		}
+	}
+	
 	"soldier_rocket_jump"
 	{
 		"BaseClass" "ability_datadriven"

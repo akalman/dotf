@@ -15,6 +15,7 @@
 			"ParticleFile" "particles/basic_ambient.vcpf"
 			"ModelScale" "2.0"
 			"Ability1" "soldier_rocket"
+			"Ability2" "replace_cosmetics"
 			"Ability3" "soldier_rocket_jump"
 	}
 }
