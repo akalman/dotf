@@ -13,11 +13,15 @@ local soldierGibUnits = {
 	'npc_dota_dotf_soldier_gib_8'
 }
 
+local soldierCosmetics = {
+	'tf2/models/weapons/pickaxe/c_pickaxe_reference.vmdl'
+}
+
 local function Soldier(hero)
 	local instance = {}
 	
 	instance.gibController = GibController(hero, 'dota_player_killed', soldierGibUnits)
-	instance.cosmeticManager = CosmeticManager(hero, {})
+	instance.cosmeticManager = CosmeticManager(hero, soldierCosmetics)
 	
 	return instance
 end

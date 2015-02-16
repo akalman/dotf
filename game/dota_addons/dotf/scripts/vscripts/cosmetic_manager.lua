@@ -8,6 +8,10 @@ local function CosmeticManager(hero, children_to_register)
 			child:RemoveSelf()
 		end
 	end
+	
+	for _, child in pairs(children_to_register) do
+		print(child)
+	end
 end
 
 return CosmeticManager
