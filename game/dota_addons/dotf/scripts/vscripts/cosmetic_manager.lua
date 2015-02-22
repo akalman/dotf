@@ -10,7 +10,13 @@ local function CosmeticManager(hero, children_to_register)
 	end
 	
 	for _, child in pairs(children_to_register) do
-		print(child)
+		print(child.model)
+		local child_entity = Entities:CreateByClassname('npc_dota_beastmaster_axe')
+		child_entity:SetModel(child.model)
+		child_entity:SetModelScale(2.0)
+		child_entity:SetParent(hero, child.attach_point)
+		child_entity:SetAbsOrigin(hero:GetAbsOrigin())
+		child_entity:SetAngles(child.angle.pitch, child.angle.yaw, child.angle.roll)
 	end
 end
 

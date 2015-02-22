@@ -14,7 +14,15 @@ local soldierGibUnits = {
 }
 
 local soldierCosmetics = {
-	'tf2/models/weapons/pickaxe/c_pickaxe_reference.vmdl'
+	{
+		model = 'tf2/models/weapons/pickaxe/c_pickaxe_reference.vmdl',
+		attach_point = 'attach_weapon1',
+		angle = {
+			pitch = 0.0,
+			yaw = -90.0,
+			roll = 0.0
+		}
+	}
 }
 
 local function Soldier(hero)
