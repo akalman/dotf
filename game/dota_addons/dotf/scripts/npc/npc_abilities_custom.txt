@@ -26,15 +26,112 @@
 			{
 				"Target" "CASTER"
 				"Center" "POINT"
-				"Duration"	"1"
-				"Distance"	"800"
+				"Duration" "1"
+				"Distance" "800"
 				"Height" "200"
 				"IsFixedDistance" "0"
 				"ShouldStun" "0"
 			}
 			"FireSound"
 			{
-				"EffectName"			"Hero_Venomancer.VenomousGaleImpact"
+				"EffectName" "Hero_Venomancer.VenomousGaleImpact"
+			}
+		}
+	}
+
+	"soldier_buff_banner"
+	{
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+
+		"AbilityCooldown" "90.0"
+		"AbilityManaCost" "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type" "FIELD_INTEGER"
+				"Range" "500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName" "soldier_buff_banner_active"
+				"Target" "CASTER"
+			}
+		}
+
+		"Modifiers"
+		{
+			"soldier_buff_banner_active"
+			{
+				"IsHidden" "1"
+				"Duration" "15.0"
+				"Aura" "soldier_buff_banner_buff"
+				"Aura_Radius" "%Range"
+				"Aura_Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" "DOTA_UNIT_TARGET_ALL"
+			}
+
+			"soldier_buff_banner_buff"
+			{
+				"IsDebuff" "0"
+				"IsPurgable" "0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "35"
+				}
+			}
+		}
+	}
+
+	"soldier_equalizer"
+	{
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+
+		"AbilityCooldown" "30.0"
+		"AbilityManaCost" "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type" "FIELD_INTEGER"
+				"Range" "500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName" "TestSysAura_Modifier"
+				"Target" "CASTER"
+			}
+		}
+
+		"Modifiers"
+		{
+			"TestSysAura_Modifier"
+			{
+				"IsHidden" "1"
+				"Duration" "8.0"
+				"IsDebuff" "0"
+				"IsPurgable" "0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "50"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "50"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_SILENCED" "MODIFIER_STATE_VALUE_ENABLED"
+				}
 			}
 		}
 	}
