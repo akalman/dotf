@@ -17,4 +17,15 @@
 			"Ability1" "soldier_rocket"
 			"Ability2" "soldier_rocket_jump"
 	}
+
+	"npc_dota_hero_soldier_override"
+	{ 
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"override_hero" "npc_dota_hero_templar_assassin"
+			"Model" "tf2/models/player/pyro/pyro_reference.vmdl"
+			"IdleExpression" "tf2/models/player/pyro/pyro_animations_anims/stand_MELEE.smd"
+			"ParticleFile" "particles/basic_ambient.vcpf"
+			"ModelScale" "2.0"
+	}
 }

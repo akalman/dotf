@@ -1,0 +1,994 @@
+<!-- schema text {7e125a45-3d83-4043-b292-9e24f8ef27b4} generic {198980d8-3a93-4919-b4c6-dd1fb07a3a4b} -->
+CVModel CVModel_0
+{
+	CVmeshList m_meshList = CVmeshList
+	{
+		CVmesh[] m_meshList = 
+		[
+			CVmesh
+			{
+				string m_meshName = "pyro_reference"
+				string m_meshFile = "tf2/models/player/pyro/pyro_reference.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			},
+			CVmesh
+			{
+				string m_meshName = "pyro_head_bodygroup"
+				string m_meshFile = "tf2/models/player/pyro/pyro_head_bodygroup.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			},
+			CVmesh
+			{
+				string m_meshName = "pyro_backpack_bodygroup"
+				string m_meshFile = "tf2/models/player/pyro/pyro_backpack_bodygroup.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			},
+			CVmesh
+			{
+				string m_meshName = "pyro_grenades_bodygroup"
+				string m_meshFile = "tf2/models/player/pyro/pyro_grenades_bodygroup.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			}
+		]
+	}
+	CVClothProxyMeshList m_clothProxyMeshList = CVClothProxyMeshList
+	{
+		CVClothProxyMesh[] m_clothProxyMeshList = 
+		[
+			
+		]
+		float m_flClothEnableThreshold = 0.050000
+		bool m_bCreateStaticBone = false
+		int m_nMaxBonesPerVertex = 4
+		bool m_bRemoveUnusedBonesEnabled = false
+		bool m_bUseOnlyRealMeshBones = false
+		float m_flMatchProxiesToMeshes = 1.000000
+		float m_flReservedFloat = 0.000000
+		int m_nReservedInt = 0
+		bool m_bReservedBool1 = false
+		bool m_bReservedBool2 = false
+		bool m_bReservedBool3 = false
+		bool m_bReservedBool4 = false
+	}
+	CVphysicsMeshList m_physicsMeshList = CVphysicsMeshList
+	{
+		CVphysicsMesh[] m_meshList = 
+		[
+			CVphysicsMesh
+			{
+				string m_meshName = "pyro_physics"
+				string m_meshFile = "tf2/models/player/pyro/pyro_physics.smd"
+				bool m_bConvexify = true
+				bool m_bMultiplePieces = false
+				symbol m_collisionType = STATIC
+				bool m_bUseExactGeometry = false
+				bool m_bAutoMass = true
+				float m_flMassOverride = 100.000000
+				bool m_bOneConvexPiece = true
+				bool m_bConcavePerJoint = false
+				bool m_bSelfCollisions = false
+				bool m_bForceKinematic = false
+				bool m_bIgnoreScale = false
+				bool m_bIgnoreSkeleton = false
+			}
+		]
+	}
+	CVmodelInfo* m_pModelInfo = NULL
+	CVBoneFlagListReference m_pBoneFlagList = CVBoneFlagListReference
+	{
+		CVBoneFlagList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVhitBoxSetListReference[] m_pHitBoxSetLists = 
+	[
+		CVhitBoxSetListReference
+		{
+			CVhitBoxSetList* m_pObject = &CVhitBoxSetList_0
+			string m_sFileName = ""
+		}
+	]
+	CVattachmentListReference[] m_pAttachmentLists = 
+	[
+		
+	]
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		CVanimGroupReference
+		{
+			CVanimGroup* m_pObject = &CVanimGroup_0
+			string m_sFileName = ""
+		}
+	]
+	CVNodeMaterialGroupListReference m_pMaterialGroupList = CVNodeMaterialGroupListReference
+	{
+		NodeMaterialGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVMeshGroupListReference m_pMeshGroupList = CVMeshGroupListReference
+	{
+		MeshGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVLODGroupListReference m_pLodGroupList = CVLODGroupListReference
+	{
+		LODGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropBreakableListReference m_pPropBreakableList = CVpropBreakableListReference
+	{
+		CVpropBreakableList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropDataListReference m_pPropDataList = CVpropDataListReference
+	{
+		CVpropDataList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVConstraintListReference[] m_pConstraintLists = 
+	[
+		
+	]
+	string m_collision = ""
+	string m_sMDLFilename = ""
+	string[] m_scriptFiles = 
+	[
+		
+	]
+	CVMaterialRemapList* m_pMaterialRemapList = &CVMaterialRemapList_0
+	float m_flFbxScale = 1.000000
+	float m_flQCScale = 1.000000
+	CVPsf* m_pvPsf = NULL
+	string m_keyValueText = ""
+	bool m_bStaticProp = false
+	bool m_bEnableClothProcessing = true
+	float m_flClothEnableThreshold = 0.050000
+	int m_nMaxClothVertsPerMesh = 2048
+}
+
+CVhitBoxSetList CVhitBoxSetList_0
+{
+	CVhitBoxSet[] m_HitBoxSets = 
+	[
+		CVhitBoxSet
+		{
+			string m_name = "default"
+			CVhitBox[] m_HitBoxes = 
+			[
+				CVhitBox
+				{
+					string m_name = "bip_pelvis"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pelvis"
+					float(3) m_vMinBounds = ( -11.254138, -10.936897, -11.301981 )
+					float(3) m_vMaxBounds = ( 11.254142, 13.958395, 11.780714 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_spine_0"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_spine_0"
+					float(3) m_vMinBounds = ( -10.273781, -11.541142, -11.838690 )
+					float(3) m_vMaxBounds = ( 10.024601, 10.289513, 5.278006 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_spine_1"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_spine_1"
+					float(3) m_vMinBounds = ( -9.762190, -5.658535, -12.727577 )
+					float(3) m_vMaxBounds = ( 10.024599, 7.324532, 6.113415 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_spine_2"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_spine_2"
+					float(3) m_vMinBounds = ( -9.762192, -4.243023, -9.733177 )
+					float(3) m_vMaxBounds = ( 10.068268, 10.317131, 5.930065 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_spine_3"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_spine_3"
+					float(3) m_vMinBounds = ( -6.679264, -3.636169, -12.389475 )
+					float(3) m_vMaxBounds = ( 7.378069, 5.713333, 5.158710 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_collar_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_collar_L"
+					float(3) m_vMinBounds = ( -6.897766, -10.556038, -4.430620 )
+					float(3) m_vMaxBounds = ( 2.802071, 1.593550, 7.569742 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_collar_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_collar_R"
+					float(3) m_vMinBounds = ( -2.955166, -2.342424, -10.518864 )
+					float(3) m_vMaxBounds = ( 6.218582, 10.239138, 4.637342 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_upperArm_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_upperArm_L"
+					float(3) m_vMinBounds = ( -3.422585, -4.338318, -3.509069 )
+					float(3) m_vMaxBounds = ( 16.048061, 6.207087, 4.705910 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_upperArm_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_upperArm_R"
+					float(3) m_vMinBounds = ( -3.595024, -6.621662, -3.509087 )
+					float(3) m_vMaxBounds = ( 16.048073, 3.847469, 4.934841 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_lowerArm_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_lowerArm_L"
+					float(3) m_vMinBounds = ( 0.137291, -3.827827, -3.929082 )
+					float(3) m_vMaxBounds = ( 13.375885, 3.913122, 6.462903 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_lowerArm_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_lowerArm_R"
+					float(3) m_vMinBounds = ( -3.556625, -6.462908, -3.913145 )
+					float(3) m_vMaxBounds = ( 13.375904, 3.929079, 3.827805 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_hand_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_hand_L"
+					float(3) m_vMinBounds = ( -2.978706, -4.911007, -3.929086 )
+					float(3) m_vMaxBounds = ( 3.708254, 4.682316, 4.929873 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_hand_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_hand_R"
+					float(3) m_vMinBounds = ( -3.708277, -4.682301, -4.929881 )
+					float(3) m_vMaxBounds = ( 3.006842, 4.911018, 3.929080 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_hip_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_hip_L"
+					float(3) m_vMinBounds = ( -2.005138, -7.544200, -8.658326 )
+					float(3) m_vMaxBounds = ( 19.904667, 6.178505, 6.950398 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_hip_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_hip_R"
+					float(3) m_vMinBounds = ( -2.005157, -6.178493, -8.658321 )
+					float(3) m_vMaxBounds = ( 19.904644, 7.544209, 7.124407 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_knee_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_knee_L"
+					float(3) m_vMinBounds = ( -6.351955, -7.802899, -6.427256 )
+					float(3) m_vMaxBounds = ( 23.279942, 4.144540, 4.325302 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_knee_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_knee_R"
+					float(3) m_vMinBounds = ( -6.351940, -6.427243, -7.802889 )
+					float(3) m_vMaxBounds = ( 23.279955, 4.325313, 4.144543 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_0_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_0_L"
+					float(3) m_vMinBounds = ( -1.860741, -3.101578, -2.220840 )
+					float(3) m_vMaxBounds = ( 2.805178, 1.672745, 1.802702 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_0_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_0_L"
+					float(3) m_vMinBounds = ( -1.252390, -3.289091, -1.538652 )
+					float(3) m_vMaxBounds = ( 0.849896, 1.541973, 1.233999 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_0_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_0_L"
+					float(3) m_vMinBounds = ( -1.099579, -1.427483, -1.132467 )
+					float(3) m_vMaxBounds = ( 1.012407, 1.676781, 0.767326 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_0_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_0_L"
+					float(3) m_vMinBounds = ( -1.016957, -2.969236, -1.291851 )
+					float(3) m_vMaxBounds = ( 0.852989, 0.659851, 1.237913 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_0_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_0_L"
+					float(3) m_vMinBounds = ( -0.730231, -2.502487, -2.682180 )
+					float(3) m_vMaxBounds = ( 2.012930, 3.276337, 0.953313 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_0_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_0_R"
+					float(3) m_vMinBounds = ( -2.805138, -2.167986, -1.542889 )
+					float(3) m_vMaxBounds = ( 1.860781, 3.101559, 1.168201 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_0_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_0_R"
+					float(3) m_vMinBounds = ( -0.849882, -1.542030, -1.233973 )
+					float(3) m_vMaxBounds = ( 1.252406, 3.289038, 1.538677 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_0_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_0_R"
+					float(3) m_vMinBounds = ( -2.684147, -1.676773, -0.767351 )
+					float(3) m_vMaxBounds = ( 1.099593, 3.984781, 2.105654 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_0_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_0_R"
+					float(3) m_vMinBounds = ( -0.852971, -0.647625, -1.237913 )
+					float(3) m_vMaxBounds = ( 1.016978, 2.969193, 1.354645 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_0_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_0_R"
+					float(3) m_vMinBounds = ( -1.010464, -1.265026, -0.953280 )
+					float(3) m_vMaxBounds = ( 0.924124, 2.502476, 1.615997 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_foot_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_foot_L"
+					float(3) m_vMinBounds = ( -2.344697, -7.839811, -5.629310 )
+					float(3) m_vMaxBounds = ( 2.519020, 1.767776, 2.420886 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_foot_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_foot_R"
+					float(3) m_vMinBounds = ( -2.519010, -1.767771, -2.420878 )
+					float(3) m_vMaxBounds = ( 2.344708, 7.839816, 5.629316 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_1_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_1_L"
+					float(3) m_vMinBounds = ( -1.666607, -3.055450, -1.213795 )
+					float(3) m_vMaxBounds = ( 1.467680, 0.838238, 0.947657 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_1_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_1_L"
+					float(3) m_vMinBounds = ( -1.045146, -2.457016, -1.034016 )
+					float(3) m_vMaxBounds = ( 0.670452, 0.445564, 0.426540 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_1_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_1_L"
+					float(3) m_vMinBounds = ( -1.056655, -2.779160, -2.210019 )
+					float(3) m_vMaxBounds = ( 0.812441, 2.345734, 0.531612 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_1_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_1_L"
+					float(3) m_vMinBounds = ( -0.808548, -2.641876, -0.861724 )
+					float(3) m_vMaxBounds = ( 0.724385, 0.329109, 0.832481 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_1_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_1_L"
+					float(3) m_vMinBounds = ( -0.595154, -1.876926, -0.809573 )
+					float(3) m_vMaxBounds = ( 0.672241, 0.395885, 0.744476 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_1_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_1_R"
+					float(3) m_vMinBounds = ( -1.467686, -0.838276, -0.947677 )
+					float(3) m_vMaxBounds = ( 1.666658, 1.558098, 1.213816 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_1_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_1_R"
+					float(3) m_vMinBounds = ( -0.670451, -0.445511, -0.426495 )
+					float(3) m_vMaxBounds = ( 1.045146, 2.457073, 1.034065 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_1_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_1_R"
+					float(3) m_vMinBounds = ( -0.812434, -0.364136, -0.531572 )
+					float(3) m_vMaxBounds = ( 0.945602, 2.779167, 0.977713 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_1_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_1_R"
+					float(3) m_vMinBounds = ( -0.724382, -0.329121, -0.832423 )
+					float(3) m_vMaxBounds = ( 0.808550, 2.641861, 0.861779 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_1_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_1_R"
+					float(3) m_vMinBounds = ( -0.672237, -0.395866, -0.744504 )
+					float(3) m_vMaxBounds = ( 0.595154, 1.876942, 0.809545 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_neck"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_neck"
+					float(3) m_vMinBounds = ( -3.262358, -1.824463, -5.054607 )
+					float(3) m_vMaxBounds = ( 3.371825, 2.684093, 3.908524 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_toe_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_toe_L"
+					float(3) m_vMinBounds = ( -2.685978, -5.557310, -1.852945 )
+					float(3) m_vMaxBounds = ( 2.519022, 0.118867, 1.578001 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_toe_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_toe_R"
+					float(3) m_vMinBounds = ( -2.519013, -0.118863, -1.578032 )
+					float(3) m_vMaxBounds = ( 2.685987, 5.557313, 1.852945 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "prp_fuelTank"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "prp_fuelTank"
+					float(3) m_vMinBounds = ( -3.896873, -8.620014, 3.048141 )
+					float(3) m_vMaxBounds = ( 4.176070, 1.846397, 4.980590 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "prp_pouch"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "prp_pouch"
+					float(3) m_vMinBounds = ( -1.862782, -6.902966, -1.406199 )
+					float(3) m_vMaxBounds = ( 3.333208, 0.536221, 3.255641 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_2_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_2_L"
+					float(3) m_vMinBounds = ( -1.208078, -2.205736, -0.962585 )
+					float(3) m_vMaxBounds = ( 0.823763, 0.723005, 0.849072 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_2_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_2_L"
+					float(3) m_vMinBounds = ( -0.913769, -2.699749, -1.015043 )
+					float(3) m_vMaxBounds = ( 0.607995, 0.535500, 0.417317 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_2_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_2_L"
+					float(3) m_vMinBounds = ( -0.859382, -2.323082, -1.067310 )
+					float(3) m_vMaxBounds = ( 0.741007, 0.413376, 0.488886 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_2_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_2_L"
+					float(3) m_vMinBounds = ( -0.795434, -2.750021, -0.858419 )
+					float(3) m_vMaxBounds = ( 0.629082, 0.442009, 0.342701 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_2_L"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_2_L"
+					float(3) m_vMinBounds = ( -0.491924, -2.196362, -0.734550 )
+					float(3) m_vMaxBounds = ( 0.643141, 0.484280, 0.381566 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_thumb_2_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_thumb_2_R"
+					float(3) m_vMinBounds = ( -0.823761, -0.723049, -0.849112 )
+					float(3) m_vMaxBounds = ( 1.208174, 2.205702, 0.962545 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_index_2_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_index_2_R"
+					float(3) m_vMinBounds = ( -0.607983, -0.535500, -0.417254 )
+					float(3) m_vMaxBounds = ( 0.913781, 2.699757, 1.015098 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_middle_2_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_middle_2_R"
+					float(3) m_vMinBounds = ( -0.741012, -0.413326, -0.488909 )
+					float(3) m_vMaxBounds = ( 0.859377, 2.323128, 1.067286 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_ring_2_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_ring_2_R"
+					float(3) m_vMinBounds = ( -0.629086, -0.441986, -0.342683 )
+					float(3) m_vMaxBounds = ( 0.795429, 2.750036, 0.858435 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_pinky_2_R"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_pinky_2_R"
+					float(3) m_vMinBounds = ( -0.643137, -0.484280, -0.381516 )
+					float(3) m_vMaxBounds = ( 0.491865, 2.196365, 0.734598 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bip_head"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bip_head"
+					float(3) m_vMinBounds = ( -4.793224, -8.168869, -8.271055 )
+					float(3) m_vMaxBounds = ( 3.623996, 3.286182, 3.971170 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "prp_cannister1"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "prp_cannister1"
+					float(3) m_vMinBounds = ( -2.461323, -5.999516, -1.689796 )
+					float(3) m_vMaxBounds = ( 5.322266, 1.827095, 2.814641 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "prp_cannister2"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "prp_cannister2"
+					float(3) m_vMinBounds = ( -2.587316, -5.883598, -1.763941 )
+					float(3) m_vMaxBounds = ( 5.301071, 1.943016, 2.813254 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "prp_cannister3"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "prp_cannister3"
+					float(3) m_vMinBounds = ( -2.374801, -5.933884, -2.061208 )
+					float(3) m_vMaxBounds = ( 5.491595, 1.921867, 2.625135 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				}
+			]
+		}
+	]
+}
+
+CVanimGroup CVanimGroup_0
+{
+	string m_Name = "Primary_Animations"
+	CVReferenceSkeletonReference m_pReferenceSkeleton = CVReferenceSkeletonReference
+	{
+		CVReferenceSkeleton* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVBoneFlagListReference m_pBoneFlagList = CVBoneFlagListReference
+	{
+		CVBoneFlagList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVseqGroupReference m_pSeqGroup = CVseqGroupReference
+	{
+		CVseqGroup* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		
+	]
+	CVanim[] m_Vanim = 
+	[
+		CVanim
+		{
+			string m_Animationname = "stand_SECONDARY"
+			string m_Filepath = "tf2/models/player/pyro/pyro_animations_anims/stand_SECONDARY.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 60
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_IDLE"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "a_runN_SECONDARY"
+			string m_Filepath = "tf2/models/player/pyro/pyro_animations_anims/a_runN_SECONDARY.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 18
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = true
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_RUN"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "AttackStand_SECONDARY"
+			string m_Filepath = "tf2/models/player/pyro/pyro_animations_anims/AttackStand_SECONDARY.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 25
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		}
+	]
+	string[] m_sScripts = 
+	[
+		
+	]
+}
+
+CVMaterialRemapList CVMaterialRemapList_0
+{
+	CVMaterialRemap[] m_vMaterialRemapList = 
+	[
+		CVMaterialRemap
+		{
+			string m_sSearchMaterial = "pyro_red.vmat"
+			string m_sReplaceMaterial = "tf2/textures/player/pyro/pyro_red.vmat"
+		}
+	]
+}

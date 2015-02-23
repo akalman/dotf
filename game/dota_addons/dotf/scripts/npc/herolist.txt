@@ -3,4 +3,5 @@
 "CustomHeroList"
 {
 		"npc_dota_hero_antimage" "1"
+		"npc_dota_hero_templar_assassin" "1"
 }
