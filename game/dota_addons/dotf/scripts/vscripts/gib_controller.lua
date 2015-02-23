@@ -10,7 +10,6 @@ local function convertToCartesianVector(radius, elevation, azimuth)
 	local y = radius * math.sin(inclination) * math.sin(azimuthInRads)
 	local z = radius * math.cos(inclination)
 	
-	print(x, y, z)
 	return Vector(x, y, z)
 end
 

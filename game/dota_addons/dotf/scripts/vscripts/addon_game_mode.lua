@@ -11,7 +11,8 @@ function Precache( context )
 	]]
 	print("[dotf] Performing pre-load precache")
 	
-	PrecacheResource( "soldier_models", "tf2/model/player/soldier", context )
+	PrecacheResource( "model_folder", "tf2/model/player/soldier", context )
+	PrecacheModel( 'tf2/models/weapons/pickaxe/c_pickaxe_reference.vmdl', context )
 end
 
 -- Create the game mode when we activate
