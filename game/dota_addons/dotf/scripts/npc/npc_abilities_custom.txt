@@ -166,7 +166,7 @@
 			"LinearProjectile"
 			{
 				"Target"				"POINT"
-				"EffectName"			"particles/units/heroes/hero_batrider/batrider_flamebreak.vpcf"
+				"EffectName"			"particles/player/soldier/abilities/soldier_rocket.vpcf"
 				"MoveSpeed"				"%speed"	
 				"StartRadius"			"%radius"
 				"EndRadius"				"%radius"
@@ -273,7 +273,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"1200 1200 1200 1200"
+				"speed"					"1200"
 			}
 			"05"
 			{
