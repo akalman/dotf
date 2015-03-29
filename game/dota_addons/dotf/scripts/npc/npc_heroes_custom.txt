@@ -14,8 +14,10 @@
 			"IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/stand_MELEE.smd"
 			"ParticleFile" "particles/basic_ambient.vcpf"
 			"ModelScale" "2.0"
-			"Ability1" "soldier_rocket"
-			"Ability2" "soldier_rocket_jump"
+			"Ability1" "soldier_rocket_jump"
+			"Ability2" "soldier_rocket"
+			"Ability3" "soldier_buff_banner"
+			"Ability4" "soldier_equalizer"
 	}
 
 	"npc_dota_hero_pyro_override"
