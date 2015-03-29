@@ -18,7 +18,7 @@
 			"Ability2" "soldier_rocket_jump"
 	}
 
-	"npc_dota_hero_soldier_override"
+	"npc_dota_hero_pyro_override"
 	{ 
 			// General
 			//-------------------------------------------------------------------------------------------------------------
@@ -27,5 +27,6 @@
 			"IdleExpression" "tf2/models/player/pyro/pyro_animations_anims/stand_MELEE.smd"
 			"ParticleFile" "particles/basic_ambient.vcpf"
 			"ModelScale" "2.0"
+			"Ability1" "pyro_flamethrower"
 	}
 }

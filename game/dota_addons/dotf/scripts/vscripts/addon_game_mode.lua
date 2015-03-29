@@ -13,6 +13,9 @@ function Precache( context )
 	
 	PrecacheResource( "model_folder", "tf2/model/player/soldier", context )
 	PrecacheModel( 'tf2/models/weapons/pickaxe/c_pickaxe_reference.vmdl', context )
+	
+	PrecacheResource( "model_folder", "tf2/model/player/pyro", context )
+	PrecacheModel( 'tf2/models/weapons/shotgun/c_shotgun_reference.vmdl', context )
 end
 
 -- Create the game mode when we activate
