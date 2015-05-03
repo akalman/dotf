@@ -1,6 +1,12 @@
 local inspect = require('inspect')
 
 local Soldier = require('soldier')
+local Pyro = require('pyro')
+
+local heroTypes = {
+	npc_dota_hero_antimage = Soldier,
+	npc_dota_hero_templar_assassin = Pyro
+}
 
 local function Dotf()
 	local instance = {}
@@ -10,7 +16,7 @@ local function Dotf()
 	local function onPlayerSpawn(eventinfo)
 		local hero = PlayerInstanceFromIndex(eventinfo.player):GetAssignedHero()
 
-		heroes[eventinfo.player] = Soldier(hero)
+		heroes[eventinfo.player] = heroTypes[hero:GetUnitName()](hero)
 	end
 
 	function instance.InitGameMode()

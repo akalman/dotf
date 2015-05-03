@@ -19,4 +19,16 @@
 			"Ability3" "soldier_buff_banner"
 			"Ability4" "soldier_equalizer"
 	}
+
+	"npc_dota_hero_pyro_override"
+	{ 
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"override_hero" "npc_dota_hero_templar_assassin"
+			"Model" "tf2/models/player/pyro/pyro_reference.vmdl"
+			"IdleExpression" "tf2/models/player/pyro/pyro_animations_anims/stand_MELEE.smd"
+			"ParticleFile" "particles/basic_ambient.vcpf"
+			"ModelScale" "2.0"
+			"Ability1" "pyro_flamethrower"
+	}
 }
