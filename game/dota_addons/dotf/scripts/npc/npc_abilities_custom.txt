@@ -140,25 +140,15 @@
 	{
 		"precache"
 		{
-		    "particle_folder"			"particles/units/heroes/hero_batrider"
-			"soundfile"                 "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+		    "particle_folder"			"particles/player/soldier/abilities/soldier_rocket.vpcf"
 		}
-		// General
-		//-------------------------------------------------------------------------------------------------------------
+		
 		"AbilityTextureName"			"gyrocopter_homing_missile"
 		"BaseClass"						"ability_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1500"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"2.0 1.0 1.0 1.0"
-		
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"0"
 
 		"OnSpellStart"
@@ -167,7 +157,7 @@
 			{
 				"Target"				"POINT"
 				"EffectName"			"particles/player/soldier/abilities/soldier_rocket.vpcf"
-				"MoveSpeed"				"%speed"	
+				"MoveSpeed"				"1200"	
 				"StartRadius"			"%radius"
 				"EndRadius"				"%radius"
 				"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -207,8 +197,8 @@
 					"Type"			"DOTA_UNIT_TARGET_ALL"
 				}
 				"Center"	"TARGET"
-				"Duration"	"1"
-				"Distance"	"20"
+				"Duration"	"0.2"
+				"Distance"	"200"
 			}
 
 			"FireSound"
@@ -224,7 +214,7 @@
 				"Target"
 				{
 					"Center"		"POINT"
-					"Radius"		"2000"
+					"Radius"		"200"
 					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 					"Type"			"DOTA_UNIT_TARGET_ALL"
 				}
@@ -236,13 +226,13 @@
 				"Target"
 				{
 					"Center"		"POINT"
-					"Radius"		"2000"
+					"Radius"		"200"
 					"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 					"Type"			"DOTA_UNIT_TARGET_ALL"
 				}
 				"Center"	"POINT"
-				"Duration"	"1"
-				"Distance"	"20"
+				"Duration"	"0.2"
+				"Distance"	"200"
 			}
 
 			"FireSound"
@@ -257,102 +247,58 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"2.0"
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"125"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_bonus"			"900"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"125 125 125 125"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"speed"					"1200"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"200 200 200 200"
+				"damage"				"200"
 			}
 		}	
 	}
 	
 	"pyro_flamethrower"
 	{
+		"precache"
+		{
+		    "particle" "particles/units/heroes/hero_lina/lina_spell_dragon_slave.vpcf"
+		}
+		
 		"BaseClass"						"ability_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
-		"AbilityCooldown"				"2.0 1.0 1.0 1.0"
+		"AbilityCastPoint"				"0.00"
+		"AbilityCooldown"				"0.5"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"0"
-		
-		"Modifiers"
-		{
-			"pyro_flamethrower_using"
-			{
-				"IsDebuff" "0"
-				"IsPurgable" "0"
-				"Duration" "5"
-				"States"
-				{
-					"MODIFIER_STATE_SILENCED" "MODIFIER_STATE_VALUE_ENABLED"
-					"MODIFIER_STATE_DISARMED" "MODIFIER_STATE_VALUE_ENABLED"
-				}
-			}
-			pyro_flamethrower_on_fire"
-			{
-				"IsDebuff" "1"
-				"IsPurgable" "1"
-				"Passive" "1"
-				"Duration" "5"
-				"ThinkInterval" "1"
-				"OnIntervalThink"
-				{
-					"Damage"
-					{
-						"Type" "DAMAGE_TYPE_PURE"
-						"Damage" "20"
-						"Target" "TARGET"
-					}
-				}
-			}
-		}
 
 		"OnSpellStart"
 		{
-			"LinearProjectile"
+			"RunScript"
 			{
 				"Target" "CASTER"
-				"EffectName" "particles/units/heroes/hero_death_prophet/death_prophet_carrion_swarm.vpcf"
-				"TargetTeams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-				"TargetTypes" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-				"TargetFlags" "DOTA_UNIT_TARGET_FLAG_NONE"
-				"HasFrontalCone" "1"
-				"ProvidesVision" "0"
-			}
-			
-			"ApplyModifier"
-			{
-				"Target" "CASTER"
-				"ModifierName" "pyro_flamethrower_using"
+				"ScriptFile" "scripts/vscripts/pyro_flamethrower.lua"
+				"Function" "OnSpellStart"
 			}
 		}
 		
 		"OnProjectileHitUnit"
 		{
+			"DeleteOnHit" "0"
+			"RunScript"
+			{
+				"Target" "TARGET"
+				"ScriptFile" "scripts/vscripts/pyro_flamethrower.lua"
+				"Function" "OnProjectileHitUnit"
+			}
+			
 			"Damage"
 			{	
 				"Target" "TARGET"
-				"Damage" "5"
+				"Damage" "100"
 				"Type" "DAMAGE_TYPE_PURE"
 			}
 		}	
