@@ -4,30 +4,30 @@ local Soldier = require('soldier')
 local Pyro = require('pyro')
 
 local heroTypes = {
-	npc_dota_hero_antimage = Soldier,
-	npc_dota_hero_templar_assassin = Pyro
+  npc_dota_hero_antimage = Soldier,
+  npc_dota_hero_templar_assassin = Pyro
 }
 
 local function Dotf()
-	local instance = {}
+  local instance = {}
 
-	local heroes = {}
-	
-	local function onPlayerSpawn(eventinfo)
-		local hero = PlayerInstanceFromIndex(eventinfo.player):GetAssignedHero()
+  local heroes = {}
 
-		heroes[eventinfo.player] = heroTypes[hero:GetUnitName()](hero)
-	end
+  local function onPlayerSpawn(eventinfo)
+    local hero = PlayerInstanceFromIndex(eventinfo.player):GetAssignedHero()
 
-	function instance.InitGameMode()
-		GameRules:SetSameHeroSelectionEnabled(true)
-	
-		print('[dotf] game mode started')
+    heroes[eventinfo.player] = heroTypes[hero:GetUnitName()](hero)
+  end
 
-		ListenToGameEvent('dota_player_pick_hero', onPlayerSpawn, self)
-	end
-	
-	return instance
+  function instance.InitGameMode()
+    GameRules:SetSameHeroSelectionEnabled(true)
+
+    print('[dotf] game mode started')
+
+    ListenToGameEvent('dota_player_pick_hero', onPlayerSpawn, self)
+  end
+
+  return instance
 end
 
 return Dotf
