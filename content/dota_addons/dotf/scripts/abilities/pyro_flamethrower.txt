@@ -1,45 +1,50 @@
 "pyro_flamethrower"
 {
-	"precache"
-	{
-		"particle" "particles/units/heroes/hero_lina/lina_spell_dragon_slave.vpcf"
-	}
-	
-	"BaseClass" "ability_datadriven"
-	"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	
-	"AbilityCastPoint" "0.00"
-	"AbilityCooldown" "0.5"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost" "0"
+  "precache"
+  {
+    "particle" "particles/units/heroes/hero_lina/lina_spell_dragon_slave.vpcf"
+  }
 
-	"OnSpellStart"
-	{
-		"RunScript"
-		{
-			"Target" "CASTER"
-			"ScriptFile" "scripts/vscripts/pyro_flamethrower.lua"
-			"Function" "OnSpellStart"
-		}
-	}
-	
-	"OnProjectileHitUnit"
-	{
-		"DeleteOnHit" "0"
-		"RunScript"
-		{
-			"Target" "TARGET"
-			"ScriptFile" "scripts/vscripts/pyro_flamethrower.lua"
-			"Function" "OnProjectileHitUnit"
-		}
-		
-		"Damage"
-		{	
-			"Target" "TARGET"
-			"Damage" "100"
-			"Type" "DAMAGE_TYPE_PURE"
-		}
-	}	
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_FLOAT"
+      "cooldown" "12.0"
+    }
+    "02"
+    {
+      "var_type" "FIELD_INTEGER"
+      "on_hit_damage" "100"
+    }
+  }
+
+  "AbilityCooldown" "%cooldown"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "Target" "CASTER"
+      "ScriptFile" "scripts/vscripts/pyro_flamethrower.lua"
+      "Function" "OnSpellStart"
+    }
+  }
+
+  "OnProjectileHitUnit"
+  {
+    "DeleteOnHit" "0"
+
+    "Damage"
+    {
+      "Target" "TARGET"
+      "Damage" "%on_hit_damage"
+      "Type" "DAMAGE_TYPE_PURE"
+    }
+  }
 }
