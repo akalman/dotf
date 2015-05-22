@@ -1,0 +1,67 @@
+"soldier_rocketjump"
+{
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_INTEGER"
+      "cast_range" "500"
+    }
+    "02"
+    {
+      "var_type" "FIELD_FLOAT"
+      "cooldown" "1.0"
+    }
+    "03"
+    {
+      "var_type" "FIELD_INTEGER"
+      "self_damage" "200"
+    }
+    "04"
+    {
+      "var_type" "FIELD_INTEGER"
+      "jump_duration" "1.8"
+    }
+    "05"
+    {
+      "var_type" "FIELD_INTEGER"
+      "jump_distance" "500"
+    }
+    "06"
+    {
+      "var_type" "FIELD_INTEGER"
+      "jump_height" "600"
+    }
+  }
+
+  "AbilityCooldown" "%cooldown"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+  "AbilityCastRange" "%cast_range"
+
+  "OnSpellStart"
+  {
+    "Damage"
+    {
+      "Target" "CASTER"
+      "Damage" "%self_damage"
+      "Type" "DAMAGE_TYPE_PURE"
+    }
+    "Knockback"
+    {
+      "Target" "CASTER"
+      "Center" "POINT"
+      "Duration" "%jump_duration"
+      "Distance" "%jump_distance"
+      "Height" "%jump_height"
+      "ShouldStun" "0"
+    }
+    "FireSound"
+    {
+      "EffectName" "Hero_Venomancer.VenomousGaleImpact"
+    }
+  }
+}

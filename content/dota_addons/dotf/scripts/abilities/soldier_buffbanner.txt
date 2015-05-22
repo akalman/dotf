@@ -1,0 +1,65 @@
+"soldier_buffbanner"
+{
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_INTEGER"
+      "range" "500"
+    }
+    "02"
+    {
+      "var_type" "FIELD_FLOAT"
+      "duration" "15.0"
+    }
+    "03"
+    {
+      "var_type" "FIELD_INTEGER"
+      "damage_bonus_percentage" "35"
+    }
+    "04"
+    {
+      "var_type" "FIELD_FLOAT"
+      "cooldown" "90.0"
+    }
+  }
+
+  "Modifiers"
+  {
+    "soldier_buffbanner_active"
+    {
+      "IsHidden" "1"
+      "Duration" "%duration"
+      "Aura" "soldier_buffbanner_buff"
+      "Aura_Radius" "%range"
+      "Aura_Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+      "Aura_Types" "DOTA_UNIT_TARGET_ALL"
+    }
+
+    "soldier_buffbanner_buff"
+    {
+      "IsDebuff" "0"
+      "IsPurgable" "0"
+      "Properties"
+      {
+        "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "%damage_bonus_percentage"
+      }
+    }
+  }
+
+  "AbilityCooldown" "%cooldown"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+
+  "OnSpellStart"
+  {
+    "ApplyModifier"
+    {
+      "ModifierName" "soldier_buffbanner_active"
+      "Target" "CASTER"
+    }
+  }
+}

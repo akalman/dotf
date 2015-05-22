@@ -13,3 +13,6 @@ game/dota_addons/*
 *.bin
 *_c
 *.cfg
+
+game/dota_addons/dotf/scripts/npc/npc_*_custom.txt
+!game/dota_addons/dotf/scripts/npc/npc_items_custom.txt

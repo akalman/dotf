@@ -1,0 +1,12 @@
+"npc_dota_hero_soldier_override"
+{
+  "override_hero" "npc_dota_hero_antimage"
+  "Model" "tf2/models/player/soldier/soldier_reference.vmdl"
+  "IdleExpression" "tf2/models/player/soldier/soldier_animations_anims/stand_MELEE.smd"
+  "ParticleFile" "particles/basic_ambient.vcpf"
+  "ModelScale" "2.0"
+  "Ability1" "soldier_rocketjump"
+  "Ability2" "soldier_rocket"
+  "Ability3" "soldier_buffbanner"
+  "Ability4" "soldier_equalizer"
+}

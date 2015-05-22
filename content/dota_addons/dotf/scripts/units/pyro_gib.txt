@@ -1,0 +1,80 @@
+"npc_dota_dotf_pyro_gib_1"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib001_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_2"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib002_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_3"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib003_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_4"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib004_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_5"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib005_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_6"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib006_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_7"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib007_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}
+"npc_dota_dotf_pyro_gib_8"
+{
+  "BaseClass" "npc_dota_creature"
+  "Model" "tf2/models/player/pyro/pyrogib008_reference.vmdl"
+  "ModelScale" "2.5"
+  "VisionDaytimeRange" "0"
+  "VisionNighttimeRange" "0"
+  "RingRadius" "0"
+  "StatusHealth" "0"
+}

@@ -1,0 +1,57 @@
+"soldier_equalizer"
+{
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_INTEGER"
+      "range" "500"
+    }
+    "02"
+    {
+      "var_type" "FIELD_FLOAT"
+      "cooldown" "30.0"
+    }
+    "03"
+    {
+      "var_type" "FIELD_FLOAT"
+      "duration" "8.0"
+    }
+  }
+
+  "Modifiers"
+  {
+    "soldier_equalizer_buff"
+    {
+      "IsHidden" "1"
+      "Duration" "%duration"
+      "IsDebuff" "0"
+      "IsPurgable" "0"
+      "Properties"
+      {
+        "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "50"
+        "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "50"
+      }
+      "States"
+      {
+        "MODIFIER_STATE_SILENCED" "MODIFIER_STATE_VALUE_ENABLED"
+      }
+    }
+  }
+
+  "AbilityCooldown" "%cooldown"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+
+  "OnSpellStart"
+  {
+    "ApplyModifier"
+    {
+      "ModifierName" "soldier_equalizer_buff"
+      "Target" "CASTER"
+    }
+  }
+}
