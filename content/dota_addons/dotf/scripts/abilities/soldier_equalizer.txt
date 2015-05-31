@@ -13,11 +13,6 @@
     "02"
     {
       "var_type" "FIELD_FLOAT"
-      "cooldown" "30.0"
-    }
-    "03"
-    {
-      "var_type" "FIELD_FLOAT"
       "duration" "8.0"
     }
   }
@@ -42,7 +37,7 @@
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "AbilityCooldown" "30.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
 

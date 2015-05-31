@@ -20,11 +20,6 @@
       "var_type" "FIELD_INTEGER"
       "damage_bonus_percentage" "35"
     }
-    "04"
-    {
-      "var_type" "FIELD_FLOAT"
-      "cooldown" "90.0"
-    }
   }
 
   "Modifiers"
@@ -50,7 +45,7 @@
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "AbilityCooldown" "90.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
 

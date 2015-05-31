@@ -13,20 +13,15 @@
   {
     "01"
     {
-      "var_type" "FIELD_FLOAT"
-      "cooldown" "12.0"
-    }
-    "02"
-    {
       "var_type" "FIELD_INTEGER"
       "on_hit_damage" "31"
     }
-    "03"
+    "02"
     {
       "var_type" "FIELD_FLOAT"
       "spell_duration" "8.0"
     }
-    "04"
+    "03"
     {
       "var_type" "FIELD_FLOAT"
       "burn_duration" "10.0"
@@ -65,7 +60,7 @@
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "AbilityCooldown" "12.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
 

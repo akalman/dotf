@@ -23,42 +23,37 @@
     }
     "03"
     {
-      "var_type" "FIELD_FLOAT"
-      "cooldown" "2.0 1.0 1.0 1.0"
+      "var_type" "FIELD_INTEGER"
+      "range" "1500"
     }
     "04"
     {
       "var_type" "FIELD_INTEGER"
-      "range" "1500"
+      "projectile_speed" "1200"
     }
     "05"
     {
       "var_type" "FIELD_INTEGER"
-      "projectile_speed" "1200"
-    }
-    "06"
-    {
-      "var_type" "FIELD_INTEGER"
       "explosion_radius" "350"
     }
-    "07"
+    "06"
     {
       "var_type" "FIELD_FLOAT"
       "knockback_duration" "0.8"
     }
-    "08"
+    "07"
     {
       "var_type" "FIELD_INTEGER"
       "knockback_distance" "200"
     }
-    "09"
+    "08"
     {
       "var_type" "FIELD_INTEGER"
       "knockback_height" "100"
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "AbilityCooldown" "2.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
   "AbilityCastRange" "%cast_range"
