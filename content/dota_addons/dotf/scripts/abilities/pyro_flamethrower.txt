@@ -3,6 +3,7 @@
   "precache"
   {
     "particle" "particles/units/heroes/hero_lina/lina_spell_dragon_slave.vpcf"
+    "particle" "particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf"
   }
 
   "BaseClass" "ability_datadriven"
@@ -12,22 +13,66 @@
   {
     "01"
     {
-      "var_type" "FIELD_FLOAT"
-      "cooldown" "12.0"
+      "var_type" "FIELD_INTEGER"
+      "on_hit_damage" "31"
     }
     "02"
     {
-      "var_type" "FIELD_INTEGER"
-      "on_hit_damage" "100"
+      "var_type" "FIELD_FLOAT"
+      "spell_duration" "8.0"
+    }
+    "03"
+    {
+      "var_type" "FIELD_FLOAT"
+      "burn_duration" "10.0"
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "Modifiers"
+  {
+    "pyro_flamethrower_using"
+    {
+      "IsDebuff" "0"
+      "IsPurgable" "0"
+      "Duration" "%spell_duration"
+      "States"
+      {
+        "MODIFIER_STATE_DISARMED" "MODIFIER_STATE_VALUE_ENABLED"
+        "MODIFIER_STATE_SILENCED" "MODIFIER_STATE_VALUE_ENABLED"
+      }
+    }
+    "pyro_burning"
+    {
+      "IsDebuff" "1"
+      "IsPurgable" "1"
+      "Duration" "%burn_duration"
+      "ThinkInterval" "0.5"
+      "EffectName" "particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf"
+      "OnIntervalThink"
+      {
+        "Damage"
+        {
+          "Target" "TARGET"
+          "Damage" "3"
+          "Type" "DAMAGE_TYPE_PURE"
+        }
+      }
+    }
+  }
+
+  "AbilityCooldown" "12.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
 
   "OnSpellStart"
   {
+
+    "ApplyModifier"
+    {
+      "ModifierName" "pyro_flamethrower_using"
+      "Target" "CASTER"
+    }
+
     "RunScript"
     {
       "Target" "CASTER"
@@ -39,6 +84,12 @@
   "OnProjectileHitUnit"
   {
     "DeleteOnHit" "0"
+
+    "ApplyModifier"
+    {
+      "Target" "TARGET"
+      "ModifierName" "pyro_burning"
+    }
 
     "Damage"
     {

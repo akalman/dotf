@@ -10,11 +10,6 @@
       "var_type" "FIELD_INTEGER"
       "cast_range" "500"
     }
-    "02"
-    {
-      "var_type" "FIELD_FLOAT"
-      "cooldown" "1.0"
-    }
     "03"
     {
       "var_type" "FIELD_INTEGER"
@@ -37,7 +32,7 @@
     }
   }
 
-  "AbilityCooldown" "%cooldown"
+  "AbilityCooldown" "1.0"
   "AbilityManaCost" "0"
   "AbilityCastPoint" "0.0"
   "AbilityCastRange" "%cast_range"

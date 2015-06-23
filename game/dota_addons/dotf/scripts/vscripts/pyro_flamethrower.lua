@@ -20,9 +20,8 @@ local function PyroFlamethrower(caster, ability)
       iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
       iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
       iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_NONE,
-      bProvidesVision = true,
+      bProvidesVision = false,
       iVisionTeamNumber = caster:GetTeamNumber(),
-      iVisionRadius = 1000,
       bReplaceExisting = false,
       bDeleteOnHit = false
     }
