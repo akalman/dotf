@@ -1,0 +1,114 @@
+"pyro_detonator"
+{
+  "precache"
+  {
+    "particle" "particles/units/heroes/hero_batrider/batrider_flamebreak.vpcf"
+    "particle" "particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf"
+  }
+
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_POINT"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_INTEGER"
+      "on_hit_damage" "31"
+    }
+    "02"
+    {
+      "var_type" "FIELD_FLOAT"
+      "spell_duration" "8.0"
+    }
+    "03"
+    {
+      "var_type" "FIELD_FLOAT"
+      "burn_duration" "10.0"
+    }
+    "04"
+    {
+      "var_type" "FIELD_FLOAT"
+      "burn_dot" "1.0"
+    }
+    "05"
+    {
+      "var_type" "FIELD_INTEGER"
+      "projectile_speed" "1200"
+    }
+    "06"
+    {
+      "var_type" "FIELD_INTEGER"
+      "projectile_radius" "125"
+    }
+    "07"
+    {
+      "var_type" "FIELD_INTEGER"
+      "projectile_distance" "3000"
+    }
+  }
+
+  "Modifiers"
+  {
+    "pyro_burning"
+    {
+      "IsDebuff" "1"
+      "IsPurgable" "1"
+      "Duration" "%burn_duration"
+      "ThinkInterval" "0.5"
+      "EffectName" "particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf"
+      "OnIntervalThink"
+      {
+        "Damage"
+        {
+          "Target" "TARGET"
+          "Damage" "%burn_dot"
+          "Type" "DAMAGE_TYPE_PURE"
+        }
+      }
+    }
+  }
+
+  "AbilityCooldown" "1.0"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+
+  "OnSpellStart"
+  {
+    "LinearProjectile"
+    {
+      "Target" "POINT"
+      "EffectName" "particles/units/heroes/hero_batrider/batrider_flamebreak.vpcf"
+      "MoveSpeed" "%projectile_speed"
+      "StartRadius" "%projectile_radius"
+      "EndRadius" "%projectile_radius"
+      "TargetTeams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+      "TargetTypes" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+      "TargetFlags" "DOTA_UNIT_TARGET_FLAG_NONE"
+      "HasFrontalCone" "0"
+      "ProvidesVision" "1"
+      "FixedDistance"  "3000"
+    }
+  }
+
+  OnProjectileFinish
+  {
+
+  }
+
+  "OnProjectileHitUnit"
+  {
+    "ApplyModifier"
+    {
+      "Target" "TARGET"
+      "ModifierName" "pyro_burning"
+    }
+
+    "Damage"
+    {
+      "Target" "TARGET"
+      "Damage" "%on_hit_damage"
+      "Type" "DAMAGE_TYPE_PURE"
+    }
+  }
+}
