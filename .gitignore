@@ -1,4 +1,12 @@
 manifest/**
+_CommonRedist/**
+bin/**
+platform/**
+dota/**
+
+dota.exe
+steam_appid.txt
+thirdpartylegalnotices.txt
 
 content/*
 !content/dota_addons
