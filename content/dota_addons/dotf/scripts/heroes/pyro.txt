@@ -6,4 +6,5 @@
   "ParticleFile" "particles/basic_ambient.vcpf"
   "ModelScale" "2.0"
   "Ability1" "pyro_flamethrower"
+  "Ability3" "pyro_detonator"
 }
