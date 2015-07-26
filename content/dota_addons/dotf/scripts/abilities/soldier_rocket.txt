@@ -78,6 +78,13 @@
     {
       "EffectName" "Hero_Venomancer.VenomousGale"
     }
+
+    "RunScript"
+    {
+      "Target" "CASTER"
+      "ScriptFile" "scripts/vscripts/particle_debug.lua"
+      "Function" "LogControlPoints"
+    }
   }
 
   OnProjectileHitUnit
