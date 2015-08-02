@@ -1,0 +1,45 @@
+"pyro_axe"
+{
+
+  "BaseClass" "ability_datadriven"
+  "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+  "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+  "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+  "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+  "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+  "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type" "FIELD_INTEGER"
+      "damage" "31"
+    }
+    "02"
+    {
+      "var_type" "FIELD_INTEGER"
+      "burning_damage" "500"
+    }
+  }
+
+
+  // "pyro_burning"
+
+  "AbilityCooldown" "10.0"
+  "AbilityManaCost" "0"
+  "AbilityCastPoint" "0.0"
+
+  "OnSpellStart"
+	{
+
+		"RunScript"
+		{
+			"ScriptFile"		"pyro_axe.lua"
+			"Function"			"PyroAxe"
+			"modifier_sprint"	"modifier_culling_blade_sprint_datadriven"
+		}
+	}
+
+}
