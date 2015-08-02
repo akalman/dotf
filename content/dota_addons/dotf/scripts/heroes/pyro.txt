@@ -7,4 +7,5 @@
   "ModelScale" "2.0"
   "Ability1" "pyro_flamethrower"
   "Ability3" "pyro_detonator"
+  "Ability4" "pyro_axe"
 }
